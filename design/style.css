@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  margin: none;
+  font-family: 4;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a68359;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin: auto 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  border: solid #ec4a4a88;
+  background-color: white;
+  border-radius: 10px;
+  width: 120px;
+  box-shadow: 1px 1px 1px #0503039a;
+  font-weight: bold;
+  color: #ec4a4a;
+}
+
+#players {
+  margin: 5px;
+  display: grid;
+  width: 100vw;
+  height: 85vh;
+  column-gap: 50px;
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  box-shadow: 1px 1px 1px #0503039a;
+  align-items: flex-end;
+}
+
+#players h2 {
+  text-transform: uppercase;
+}
+
+#player1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39.2rem;
+}
+
+#player2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39.2rem;
+}
+
+#score {
+  font-size: 40px;
+  color: #ec4a4a;
+  font-weight: bolder;
+}
+
+#current {
+  margin-top: 60px;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#current p {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.current1 {
+  margin-left: 5px;
+  background-color: #ec4a4a;
+}
+
+.current2 {
+  background-color: #ec4a4a;
+  margin-right: 5px;
+}
+
+#dice-img {
+  background-image: url(/img/mobile/dice-5.png);
+  background-repeat: no-repeat;
+  height: 88px;
+  width: 88px;
+  justify-self: center;
+  position: absolute;
+  top: 16.5rem;
+}
+
+#btn-new-game {
+  top: 5rem;
+  justify-self: center;
+}
+
+.btn-new-game-text {
+  margin-left: 5px;
+}
+
+#roll-dice {
+  justify-self: center;
+  top: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+#hold {
+  justify-self: center;
+  top: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.audio {
+  top: 4rem;
+  right: 15px;
+}
+
+.audio:hover {
+  width: 45px;
+}
+
+.rules {
+  position: absolute;
+  top: 7rem;
+  right: 15px;
+}
+
+.rules:hover {
+  color: #ec4a4a;
+}
+
+.active {
+  background-color: #dad8d8a2;
+}
+
+.hidden {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  button {
+    font-size: 25px;
+  }
+  button:hover {
+    font-size: 26px;
+    width: 180px;
+    height: 50px;
+  }
+  #dice-img {
+    background-image: url(/img/web/dice-5.png);
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 140px;
+    align-self: center;
+    position: absolute;
+    top: 17rem;
+  }
+  #score {
+    align-self: center;
+    font-size: 400%;
+  }
+  #current {
+    width: 200px;
+    height: 150px;
+  }
+  #roll-dice {
+    display: flex;
+    flex-direction: row;
+    top: 32rem;
+  }
+  #hold {
+    display: flex;
+    flex-direction: row;
+    top: 37rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
