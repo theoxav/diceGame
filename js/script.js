@@ -5,6 +5,7 @@
  const player2 = document.getElementById('player2');
 
  const labelPlayer1 = document.querySelector('.player1-label');
+ const labelPlayer2 = document.querySelector('.player2-label');
 
  const score1 = document.querySelector('.score1');
  const score2 = document.querySelector('.score2');
@@ -41,6 +42,8 @@ const init = ()=> {
   currentScore1.textContent = 0;
   currentScore2.textContent = 0;
 
+  labelPlayer1.textContent = "Player 1";
+  labelPlayer2.textContent = "Player 2";
   player1.classList.add('active');
   player1.classList.remove('winner')
   diceImg.classList.add('dice-hidden');
@@ -65,6 +68,8 @@ const switchPlayer = ()=>{
 //ROLL FUNCTION//
 btnRoll.addEventListener('click', () => {
     if (playing) {
+      console.log(scores[activePlayer]);
+      
 
         //1.generating a randomdice roll
         let dice = Math.trunc(Math.random() * 6) + 1;
@@ -96,13 +101,13 @@ btnRoll.addEventListener('click', () => {
 btnHold.addEventListener('click', () => {
   if(playing) {
     //1.Add current score to active player score
-    scores[activePlayer] +=currentScore;
+    scores[activePlayer-1] +=currentScore;
 
     //scores[1] = scores[1] + currentScore;
-    document.querySelector(`.score${activePlayer}`).textContent = `${scores[activePlayer]}`;
+    document.querySelector(`.score${activePlayer}`).textContent = `${scores[activePlayer-1]}`;
     console.log(activePlayer)
 
-    if (scores[activePlayer] >= 100){
+    if (scores[activePlayer-1] >= 10){
       playing = false;
       diceImg.classList.add('hidden');
       document
