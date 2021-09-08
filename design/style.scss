@@ -1,249 +1,263 @@
- // CUSTOM //
- @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+// CUSTOM //
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
 
- //COLORS
- $red: #ec4a4a;
- $grey: #707070;
- $brown: #a68359;
+//COLORS
+$red: #ec4a4a;
+$grey: #707070;
+$brown: #a68359;
 
 
- * {
-     font-family: "Lato", sans-serif;
- }
-
- html {
-     margin: none;
-     font-family: 4;
-     box-sizing: border-box;
- }
-
- body {
-     margin: auto;
-     width: 100vw;
-     height: 100vh;
-     background-color: $brown;
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;   
- }
-
- button {
-     background-color: rgba(255, 255, 255, 0);
-     border: none;
-     margin: auto 0;
-     position: absolute;
-     display: flex;
-     align-items: center;
- }
-
- button:hover {
-     border: solid #ec4a4a88;
-     background-color: white;
-     border-radius: 10px;
-     width: 120px;
-     box-shadow: 1px 1px 1px #0503039a;
-     font-weight: bold;
-     color: $red;
- }
-
-   //CONTAINER PLAYER//
- #players {
-     margin: 5px;
-     display: grid;
-     width: 100vw;
-     height: 85vh;
-     column-gap: 50px;
-     background-color: white;
-     grid-template-columns: 1fr 1fr;
-     align-content: center;
-     box-shadow: 1px 1px 1px #0503039a;
-     align-items: flex-end;
-
-     h2{
-         text-transform: uppercase;
-     }
- }
-
-   //PLAYER 1//
- #player1 { 
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: 39.2rem;
- }
-
-  //PLAYER 2//
- #player2 {
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: 39.2rem;
- }
-
-  //SCORE//
-  #score{
-      font-size: 40px;
-      color: $red;
-      font-weight: bolder;
-  }
-
-  //CURRENT//
- #current {
-     margin-top: 60px;
-     width: 35vw;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     
-     p{
-         color: white;
-         font-weight: bold;
-         font-size: 25px;      
-     }
- }
-//CURRENT PLAYER 1//
- .current1 {
-     margin-left: 5px;
-     background-color: $red;
- }
-  //CURRENT PLAYER 2
- .current2 {
-     background-color: $red; 
-     margin-right: 5px;  
- }
-  
- //DICE-IMG//
- #dice-img {
-    background-image: url(/img/mobile/dice-5.png);
-    background-repeat: no-repeat;
-    height: 88px;
-    width: 88px;
-    justify-self: center;
-    position: absolute;
-    top: 16.5rem;
+* {
+    font-family: "Lato", sans-serif;
 }
-  //BUTTONS//
 
-  //BTN NEW GAME//
- #btn-new-game {
+html {
+    margin: none;
+    font-family: 4;
+    box-sizing: border-box;
+}
 
-     top: 5rem;
-     justify-self: center;
+body {
+    margin: auto;
+    width: 100vw;
+    height: 800px;
+    background-color: $brown;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: auto 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    border: solid #ec4a4a88;
+    background-color: white;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: 1px 1px 1px #0503039a;
+    font-weight: bold;
+    color: $red;
+}
+
+  //CONTAINER PLAYER//
+#players {
+    
+    margin: 5px;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    column-gap: 50px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    box-shadow: 1px 1px 1px #0503039a;
+    align-items: flex-end;
+
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+  //PLAYER 1//
+#player1 { 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 39.2rem;
+}
+
+ //PLAYER 2//
+#player2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 39.2rem;
+}
+
+ //SCORE//
+ #score{
+     font-size: 40px;
+     color: $red;
+     font-weight: bolder;
  }
 
- .btn-new-game-text{
-     margin-left: 5px;
- }
+ //CURRENT//
+#current {
+    margin-top: 60px;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p{
+        color: white;
+        font-weight: bold;
+        font-size: 25px;      
+    }
+}
+//CURRENT PLAYER 1//
+.current1 {
+    margin-left: 5px;
+    background-color: $red;
+}
+ //CURRENT PLAYER 2
+.current2 {
+    background-color: $red; 
+    margin-right: 5px;  
+}
+ 
+//DICE-IMG//
+#dice-img {
+    margin: auto;
+   background-image: url(/img/mobile/dice-5.png);
+   background-repeat: no-repeat;
+   height: 88px;
+   width: 88px;
+   justify-self: center;
+   position: absolute;
+   top: 18.5rem;
+   
+}
+ //BUTTONS//
+
+ //BTN NEW GAME//
+#btn-new-game {
+
+    top: 5rem;
+    justify-self: center;
+}
+
+.btn-new-game-text{
+    margin-left: 5px;
+}
+
+  //BTN ROLL//
+#roll-dice {
+    justify-self: center;
+    top: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+ //BTN HOLD//
+#hold {
+    justify-self: center;
+    top: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+//AUDIO//
+.audio{
+    top: 4rem;
+    right: 15px;
+}
+.audio:hover{
+    width: 45px;
+}
+
+//RULES//
+.rules{
+    position: absolute;
+    top: 7rem;
+    right: 15px;
+}
+.rules:hover{
+    color: $red;
+}
+
+//DYNAMIC CLASS
+.active{
+   background-color: #dad8d8a2;
+    
+}
+
+.dice-hidden{
+    display: none;
+}
+.hidden{
+    font-size: 8px;
+}
+
+.winner{
+    background-color: rgba(0, 128, 0, 0.781);
+    font-weight: bolder;
+    color: $red;
+}
+
+
+
+  // MEDIAQUERIES WEB//
+
+@media screen and(min-width:768px) {
+  
+   //PLAYERS//
+   h2{
+       font-size: 40px;
+       margin-top: 100px;
+   }
+
+   //BUTTONS//
+   button{
+       font-size: 25px;
+       
+   }
+
+   button:hover{
+       font-size: 26px;
+       width: 180px;
+       height: 50px;
+   
+   }
+   //IMG DICE//
+   #dice-img {
+       
+     background-image: url(/img/web/dice-5.png);
+     background-repeat: no-repeat;
+     height: 140px;
+     width: 140px;
+     align-self: center;
+     position: absolute;
+     top: 19.5rem;
+     }
+
+     //SCORE//
+     #score{
+       align-self: center;
+       font-size: 400%;
+       
+     }
+
+     //CURRENT SCORE//
+     #current{
+       width: 200px;
+       height: 150px;
+   }
 
    //BTN ROLL//
- #roll-dice {
-     justify-self: center;
-     top: 28rem;
-     display: flex;
-     flex-direction: column;
-     align-self: flex-end;
- }
+   #roll-dice{
+       display: flex;
+       flex-direction: row;
+       top: 35rem;
+   }
 
-  //BTN HOLD//
- #hold {
-     justify-self: center;
-     top: 33rem;
-     display: flex;
-     flex-direction: column;
-     align-self: flex-end;
- }
-
- //AUDIO//
- .audio{
-     top: 4rem;
-     right: 15px;
- }
- .audio:hover{
-     width: 45px;
- }
-
- //RULES//
- .rules{
-     position: absolute;
-     top: 7rem;
-     right: 15px;
- }
- .rules:hover{
-     color: $red;
- }
-
- //DYNAMIC CLASS
- .active{
-    background-color: #dad8d8a2;
-     
- }
-
- .hidden{
-     font-size: 8px;
- }
-
-   // MEDIAQUERIES WEB//
-
- @media screen and(min-width:768px) {
-   
-    //PLAYERS//
-    h2{
-        font-size: 40px;
-        margin-top: 100px;
-    }
-
-    //BUTTONS//
-    button{
-        font-size: 25px;
-        
-    }
-
-    button:hover{
-        font-size: 26px;
-        width: 180px;
-        height: 50px;
-    
-    }
-    //IMG DICE//
-    #dice-img {
-        
-      background-image: url(/img/web/dice-5.png);
-      background-repeat: no-repeat;
-      height: 140px;
-      width: 140px;
-      align-self: center;
-      position: absolute;
-      top: 17rem;
-      }
-
-      //SCORE//
-      #score{
-        align-self: center;
-        font-size: 400%;
-        
-      }
-
-      //CURRENT SCORE//
-      #current{
-        width: 200px;
-        height: 150px;
-    }
-
-    //BTN ROLL//
-    #roll-dice{
-        display: flex;
-        flex-direction: row;
-        top: 32rem;
-    }
-
-    //BTN HOLD//
-    #hold{
-        display: flex;
-        flex-direction: row;
-        top: 37rem;
-    }
- }
+   //BTN HOLD//
+   #hold{
+       display: flex;
+       flex-direction: row;
+       top: 40rem;
+   }
+}
