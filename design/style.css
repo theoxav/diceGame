@@ -12,7 +12,7 @@ html {
 body {
   margin: auto;
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   background-color: #a68359;
   display: flex;
   justify-content: space-evenly;
@@ -42,7 +42,7 @@ button:hover {
   margin: 5px;
   display: grid;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   column-gap: 50px;
   background-color: white;
   grid-template-columns: 1fr 1fr;
@@ -104,13 +104,14 @@ button:hover {
 }
 
 #dice-img {
+  margin: auto;
   background-image: url(/img/mobile/dice-5.png);
   background-repeat: no-repeat;
   height: 88px;
   width: 88px;
   justify-self: center;
   position: absolute;
-  top: 16.5rem;
+  top: 18.5rem;
 }
 
 #btn-new-game {
@@ -161,8 +162,18 @@ button:hover {
   background-color: #dad8d8a2;
 }
 
+.dice-hidden {
+  display: none;
+}
+
 .hidden {
   font-size: 8px;
+}
+
+.winner {
+  background-color: rgba(0, 128, 0, 0.781);
+  font-weight: bolder;
+  color: #ec4a4a;
 }
 
 @media screen and (min-width: 768px) {
@@ -185,7 +196,7 @@ button:hover {
     width: 140px;
     align-self: center;
     position: absolute;
-    top: 17rem;
+    top: 19.5rem;
   }
   #score {
     align-self: center;
@@ -198,12 +209,12 @@ button:hover {
   #roll-dice {
     display: flex;
     flex-direction: row;
-    top: 32rem;
+    top: 35rem;
   }
   #hold {
     display: flex;
     flex-direction: row;
-    top: 37rem;
+    top: 40rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
