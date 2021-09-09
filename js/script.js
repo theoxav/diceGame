@@ -1,4 +1,7 @@
  'use strict'
+
+
+
  //SELECTING ELEMENTS//
 
  const player1 = document.getElementById('player1')
@@ -96,6 +99,8 @@ btnRoll.addEventListener('click', () => {
 //FUNCTION HOLD//
 btnHold.addEventListener('click', () => {
   if(playing) {
+
+    playSound();
     //1.Add current score to active player score
     scores[activePlayer-1] +=currentScore;
 
@@ -123,6 +128,8 @@ btnHold.addEventListener('click', () => {
 newGame.addEventListener('click' , () => {
   init();
 })
+
+
 
 
 
