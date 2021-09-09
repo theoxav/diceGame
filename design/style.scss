@@ -137,6 +137,9 @@ button:hover {
     top: 5rem;
     justify-self: center;
 }
+#btn-new-game:hover{
+    width: 150px;
+}
 
 .btn-new-game-text{
     margin-left: 5px;
@@ -160,25 +163,6 @@ button:hover {
     align-self: flex-end;
 }
 
-//AUDIO//
-.audio{
-    top: 4rem;
-    right: 15px;
-}
-.audio:hover{
-    width: 45px;
-}
-
-//RULES//
-.rules{
-    position: absolute;
-    top: 7rem;
-    right: 15px;
-}
-.rules:hover{
-    color: $red;
-}
-
 //DYNAMIC CLASS
 .active{
    background-color: #dad8d8a2;
@@ -198,7 +182,69 @@ button:hover {
     color: $red;
 }
 
+ //MODAL//
+#Modal{
+    height: 300px;
 
+    li{
+        list-style-type: none;
+    }
+    p{
+        width: 300px;
+        color: $red;
+        font-weight: bolder;
+        font-size: larger;
+        border: solid $red;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px $grey;
+        border-width: 1.5px;
+    }
+
+    
+    h6{
+        font-weight: bolder !important;
+        text-decoration: underline;
+        color: $red;
+    } 
+    
+}
+
+.rules{
+    position: absolute;
+    top: 7rem;
+    right: 15px;
+}
+.rules:hover{
+    color: $red;
+    width: 50px;
+    height: 30px;
+}
+
+.modal-title{
+    color: $red;
+    font-weight: bolder;
+    text-align: center;
+}
+.modal-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $red;
+
+    h5{
+        color: white;
+    }
+    
+    
+}
+.modal-title{
+ 
+    justify-self: center;
+}
+
+.modal-footer{
+    height: 50px;
+}
 
   // MEDIAQUERIES WEB//
 

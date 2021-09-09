@@ -18,7 +18,6 @@
  const btnHold = document.querySelector('#hold');
  const newGame = document.querySelector('#btn-new-game');
 
- const audio = document.querySelector('.audio');
  const rules = document.querySelector('.rules');
  
  //VARIABLES//
@@ -68,12 +67,10 @@ const switchPlayer = ()=>{
 //ROLL FUNCTION//
 btnRoll.addEventListener('click', () => {
     if (playing) {
-      console.log(scores[activePlayer]);
       
-
         //1.generating a randomdice roll
         let dice = Math.trunc(Math.random() * 6) + 1;
-  console.log(activePlayer)
+  
         //2.Display dice
         diceImg.classList.remove('dice-hidden');
   
@@ -87,7 +84,6 @@ btnRoll.addEventListener('click', () => {
         if(dice !== 1){
           //add dice to the current score
           currentScore +=dice;
-          console.log(currentScore);
           document.querySelector(`.current-score${activePlayer}`).textContent = currentScore;
         }
         else{
@@ -105,7 +101,7 @@ btnHold.addEventListener('click', () => {
 
     //scores[1] = scores[1] + currentScore;
     document.querySelector(`.score${activePlayer}`).textContent = `${scores[activePlayer-1]}`;
-    console.log(activePlayer)
+  
 
     if (scores[activePlayer-1] >= 10){
       playing = false;
@@ -115,7 +111,7 @@ btnHold.addEventListener('click', () => {
        .classList.add('winner');
 
        document.querySelector(`.player${activePlayer}-label`).textContent = `Player ${activePlayer} Win !`;
-       document.querySelector(`.player${activePlayer}`).classList.remove('active');
+     
     } else{
       //next player
       switchPlayer();
@@ -127,4 +123,8 @@ btnHold.addEventListener('click', () => {
 newGame.addEventListener('click' , () => {
   init();
 })
+
+
+
+
     

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
     <link rel="stylesheet" href="design/style.css">
     <title>Document</title>
 </head>
@@ -36,10 +37,50 @@
         <button id="btn-new-game"><img src="img/new-game-icon.png" alt="new-game"> <span class="btn-new-game-text">New Game</span></button>
         <button id="roll-dice"><img src="img/roll-icon.png" alt="roll-icon"> Roll dice</button>
         <button id="hold"><img src="img/hold-icon.png" alt="hold-icon">Hold</button>
-        <button class="audio"><img src="img/audio-icon.png" alt=""></button>
-        <a class="rules" href="#">rules</a>
-    </div>
+        
+        <!-- Button trigger modal -->
+<button type="button" class="rules" data-bs-toggle="modal" data-bs-target="#Modal">
+    rules
+  </button>
+  <!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content"> 
+          <div class="modal-header">
+              <h5>Rules</h5>
+          </div>       
+        <div class="modal-body">
+            <ol>
+                <li><h6>The User clicks on « Roll dice »:</h6> 
+                    Generate a random dice: <br>
+                   -If the dice is equal to 1 : the player changes. <br>
+                   -Else the dice score is added to the current score
+               </li><br>
    
+               <li>
+                   <h6>The User clicks on « Hold » :</h6>
+                    The current score is added to the total score <br>
+                     -If the score is greater than or equal to 100 the player wins <br>
+                     -Else: player change
+               </li><br>
+   
+               <li>
+                   <h6>The User clicks on "New Game » :</h6>
+                     Reset scores
+                     The player One starts
+               </li>      
+           </ol>
+           <p>"The player who has reached 100 or more wins the game 🎉"</p>
+           </div>
+         
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+   <script src="vendor/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
