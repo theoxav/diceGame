@@ -119,6 +119,10 @@ button:hover {
   justify-self: center;
 }
 
+#btn-new-game:hover {
+  width: 150px;
+}
+
 .btn-new-game-text {
   margin-left: 5px;
 }
@@ -139,25 +143,6 @@ button:hover {
   align-self: flex-end;
 }
 
-.audio {
-  top: 4rem;
-  right: 15px;
-}
-
-.audio:hover {
-  width: 45px;
-}
-
-.rules {
-  position: absolute;
-  top: 7rem;
-  right: 15px;
-}
-
-.rules:hover {
-  color: #ec4a4a;
-}
-
 .active {
   background-color: #dad8d8a2;
 }
@@ -174,6 +159,68 @@ button:hover {
   background-color: rgba(0, 128, 0, 0.781);
   font-weight: bolder;
   color: #ec4a4a;
+}
+
+#Modal {
+  height: 300px;
+}
+
+#Modal li {
+  list-style-type: none;
+}
+
+#Modal p {
+  width: 300px;
+  color: #ec4a4a;
+  font-weight: bolder;
+  font-size: larger;
+  border: solid #ec4a4a;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #707070;
+  border-width: 1.5px;
+}
+
+#Modal h6 {
+  font-weight: bolder !important;
+  text-decoration: underline;
+  color: #ec4a4a;
+}
+
+.rules {
+  position: absolute;
+  top: 7rem;
+  right: 15px;
+}
+
+.rules:hover {
+  color: #ec4a4a;
+  width: 50px;
+  height: 30px;
+}
+
+.modal-title {
+  color: #ec4a4a;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec4a4a;
+}
+
+.modal-header h5 {
+  color: white;
+}
+
+.modal-title {
+  justify-self: center;
+}
+
+.modal-footer {
+  height: 50px;
 }
 
 @media screen and (min-width: 768px) {
