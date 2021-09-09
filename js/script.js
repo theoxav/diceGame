@@ -44,7 +44,7 @@ const init = ()=> {
   currentScore1.textContent = 0;
   currentScore2.textContent = 0;
 
-  labelPlayer1.textContent = "Player 1";
+  labelPlayer1.textContent = "Player 1 ";
   labelPlayer2.textContent = "Player 2";
   player1.classList.add('active');
   player1.classList.remove('winner')
@@ -100,7 +100,7 @@ btnRoll.addEventListener('click', () => {
 btnHold.addEventListener('click', () => {
   if(playing) {
 
-    playSound();
+  
     //1.Add current score to active player score
     scores[activePlayer-1] +=currentScore;
 
@@ -108,7 +108,7 @@ btnHold.addEventListener('click', () => {
     document.querySelector(`.score${activePlayer}`).textContent = `${scores[activePlayer-1]}`;
   
 
-    if (scores[activePlayer-1] >= 10){
+    if (scores[activePlayer-1] >= 100){
       playing = false;
       diceImg.classList.add('hidden');
       document

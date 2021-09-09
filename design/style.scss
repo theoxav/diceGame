@@ -134,7 +134,7 @@ button:hover {
  //BTN NEW GAME//
 #btn-new-game {
 
-    top: 5rem;
+    top: 6rem;
     justify-self: center;
 }
 #btn-new-game:hover{
@@ -177,9 +177,12 @@ button:hover {
 }
 
 .winner{
-    background-color: rgba(0, 128, 0, 0.781);
+    
+    background-color: green;
     font-weight: bolder;
-    color: $red;
+    font-size: 60px;
+    color: white;
+    
 }
 
  //MODAL//
@@ -292,7 +295,9 @@ button:hover {
        width: 200px;
        height: 150px;
    }
-
+#btn-new-game:hover{
+   width: 200px; 
+}
    //BTN ROLL//
    #roll-dice{
        display: flex;
