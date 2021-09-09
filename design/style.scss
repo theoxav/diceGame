@@ -24,7 +24,7 @@ body {
     background-color: $brown;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;   
+    align-items: center;
 }
 
 button {
@@ -46,9 +46,9 @@ button:hover {
     color: $red;
 }
 
-  //CONTAINER PLAYER//
+//CONTAINER PLAYER//
 #players {
-    
+
     margin: 5px;
     display: grid;
     width: 100vw;
@@ -60,13 +60,14 @@ button:hover {
     box-shadow: 1px 1px 1px #0503039a;
     align-items: flex-end;
 
-    h2{
+    h2 {
         text-transform: uppercase;
+        margin: auto 0;
     }
 }
 
-  //PLAYER 1//
-#player1 { 
+//PLAYER 1//
+#player1 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -75,7 +76,7 @@ button:hover {
     height: 39.2rem;
 }
 
- //PLAYER 2//
+//PLAYER 2//
 #player2 {
     text-align: center;
     display: flex;
@@ -85,67 +86,71 @@ button:hover {
     height: 39.2rem;
 }
 
- //SCORE//
- #score{
-     font-size: 40px;
-     color: $red;
-     font-weight: bolder;
- }
+//SCORE//
+#score {
+    font-size: 40px;
+    color: $red;
+    font-weight: bolder;
+}
 
- //CURRENT//
+//CURRENT//
 #current {
     margin-top: 60px;
     width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    p{
+
+    p {
         color: white;
         font-weight: bold;
-        font-size: 25px;      
+        font-size: 25px;
     }
 }
+
 //CURRENT PLAYER 1//
 .current1 {
     margin-left: 5px;
     background-color: $red;
 }
- //CURRENT PLAYER 2
+
+//CURRENT PLAYER 2
 .current2 {
-    background-color: $red; 
-    margin-right: 5px;  
+    background-color: $red;
+    margin-right: 5px;
 }
- 
+
 //DICE-IMG//
 #dice-img {
     margin: auto;
-   background-image: url(/img/mobile/dice-5.png);
-   background-repeat: no-repeat;
-   height: 88px;
-   width: 88px;
-   justify-self: center;
-   position: absolute;
-   top: 18.5rem;
-   
-}
- //BUTTONS//
+    background-image: url(/img/mobile/dice-5.png);
+    background-repeat: no-repeat;
+    height: 88px;
+    width: 88px;
+    justify-self: center;
+    position: absolute;
+    top: 18.5rem;
 
- //BTN NEW GAME//
+}
+
+//BUTTONS//
+
+//BTN NEW GAME//
 #btn-new-game {
 
     top: 6rem;
     justify-self: center;
 }
-#btn-new-game:hover{
+
+#btn-new-game:hover {
     width: 150px;
 }
 
-.btn-new-game-text{
+.btn-new-game-text {
     margin-left: 5px;
 }
 
-  //BTN ROLL//
+//BTN ROLL//
 #roll-dice {
     justify-self: center;
     top: 28rem;
@@ -154,7 +159,7 @@ button:hover {
     align-self: flex-end;
 }
 
- //BTN HOLD//
+//BTN HOLD//
 #hold {
     justify-self: center;
     top: 33rem;
@@ -164,35 +169,47 @@ button:hover {
 }
 
 //DYNAMIC CLASS
-.active{
-   background-color: #dad8d8a2;
-    
+.active {
+    background-color: #dad8d8a2;
+
 }
 
-.dice-hidden{
+.dice-hidden {
     display: none;
 }
-.hidden{
+
+.hidden {
     font-size: 8px;
 }
 
-.winner{
-    
-    background-color: green;
-    font-weight: bolder;
-    font-size: 60px;
-    color: white;
-    
-}
+.winner {
 
- //MODAL//
-#Modal{
+    background: linear-gradient(0deg, rgba(201, 27, 18, 1) 38%, rgba(233, 233, 233, 1) 100%);
+    font-weight: bolder;
+    color: white;
+
+
+
+#current {
+    background-color: #c91b12;
+    color: #c91b12;
+
+    p {
+        color: #c91b12;
+
+    }
+
+}
+}
+//MODAL//
+#Modal {
     height: 300px;
 
-    li{
+    li {
         list-style-type: none;
     }
-    p{
+
+    p {
         width: 300px;
         color: $red;
         font-weight: bolder;
@@ -203,112 +220,118 @@ button:hover {
         border-width: 1.5px;
     }
 
-    
-    h6{
+
+    h6 {
         font-weight: bolder !important;
         text-decoration: underline;
         color: $red;
-    } 
-    
+    }
+
 }
 
-.rules{
+.rules {
     position: absolute;
     top: 7rem;
     right: 15px;
 }
-.rules:hover{
+
+.rules:hover {
     color: $red;
     width: 50px;
     height: 30px;
 }
 
-.modal-title{
+.modal-title {
     color: $red;
     font-weight: bolder;
     text-align: center;
 }
-.modal-header{
-    display:flex;
+
+.modal-header {
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: $red;
 
-    h5{
+    h5 {
         color: white;
     }
-    
-    
+
+
 }
-.modal-title{
- 
+
+.modal-title {
+
     justify-self: center;
 }
 
-.modal-footer{
+.modal-footer {
     height: 50px;
 }
 
-  // MEDIAQUERIES WEB//
+// MEDIAQUERIES WEB//
 
 @media screen and(min-width:768px) {
-  
-   //PLAYERS//
-   h2{
-       font-size: 40px;
-       margin-top: 100px;
-   }
 
-   //BUTTONS//
-   button{
-       font-size: 25px;
-       
-   }
+    //PLAYERS//
+    h2 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
 
-   button:hover{
-       font-size: 26px;
-       width: 180px;
-       height: 50px;
-   
-   }
-   //IMG DICE//
-   #dice-img {
-       
-     background-image: url(/img/web/dice-5.png);
-     background-repeat: no-repeat;
-     height: 140px;
-     width: 140px;
-     align-self: center;
-     position: absolute;
-     top: 19.5rem;
-     }
+    //BUTTONS//
+    button {
+        font-size: 25px;
 
-     //SCORE//
-     #score{
-       align-self: center;
-       font-size: 400%;
-       
-     }
+    }
 
-     //CURRENT SCORE//
-     #current{
-       width: 200px;
-       height: 150px;
-   }
-#btn-new-game:hover{
-   width: 200px; 
-}
-   //BTN ROLL//
-   #roll-dice{
-       display: flex;
-       flex-direction: row;
-       top: 35rem;
-   }
+    button:hover {
+        font-size: 26px;
+        width: 180px;
+        height: 50px;
 
-   //BTN HOLD//
-   #hold{
-       display: flex;
-       flex-direction: row;
-       top: 40rem;
-   }
+    }
+
+    //IMG DICE//
+    #dice-img {
+
+        background-image: url(/img/web/dice-5.png);
+        background-repeat: no-repeat;
+        height: 140px;
+        width: 140px;
+        align-self: center;
+        position: absolute;
+        top: 19.5rem;
+    }
+
+    //SCORE//
+    #score {
+        align-self: center;
+        font-size: 400%;
+
+    }
+
+    //CURRENT SCORE//
+    #current {
+        width: 200px;
+        height: 150px;
+    }
+
+    #btn-new-game:hover {
+        width: 200px;
+    }
+
+    //BTN ROLL//
+    #roll-dice {
+        display: flex;
+        flex-direction: row;
+        top: 35rem;
+    }
+
+    //BTN HOLD//
+    #hold {
+        display: flex;
+        flex-direction: row;
+        top: 40rem;
+    }
 }

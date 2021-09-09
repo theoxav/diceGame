@@ -100,21 +100,19 @@ btnRoll.addEventListener('click', () => {
 btnHold.addEventListener('click', () => {
   if(playing) {
 
-  
     //1.Add current score to active player score
     scores[activePlayer-1] +=currentScore;
 
     //scores[1] = scores[1] + currentScore;
     document.querySelector(`.score${activePlayer}`).textContent = `${scores[activePlayer-1]}`;
   
-
     if (scores[activePlayer-1] >= 100){
       playing = false;
       diceImg.classList.add('hidden');
       document
        .querySelector(`#player${activePlayer}`)
        .classList.add('winner');
-
+      
        document.querySelector(`.player${activePlayer}-label`).textContent = `Player ${activePlayer} Win !`;
      
     } else{
