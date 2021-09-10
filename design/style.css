@@ -106,7 +106,7 @@ button:hover {
 
 #dice-img {
   margin: auto;
-  background-image: url(/img/mobile/dice-5.png);
+  background-image: url(img/mobile/dice-5.png);
   background-repeat: no-repeat;
   height: 88px;
   width: 88px;
@@ -247,7 +247,7 @@ button:hover {
     height: 50px;
   }
   #dice-img {
-    background-image: url(/img/web/dice-5.png);
+    background-image: url(img/web/dice-5.png);
     background-repeat: no-repeat;
     height: 140px;
     width: 140px;
