@@ -79,10 +79,10 @@ btnRoll.addEventListener('click', () => {
   
         //responsive dice
         if(window.matchMedia("(min-width :767px)").matches){
-          diceImg.style.backgroundImage = `url(/img/web/dice-${dice}.png)`;
+          diceImg.style.backgroundImage = `url(img/web/dice-${dice}.png)`;
         }
         else{
-          diceImg.style.backgroundImage = `url(/img/mobile/dice-${dice}.png)`;
+          diceImg.style.backgroundImage = `url(img/mobile/dice-${dice}.png)`;
         }
         if(dice !== 1){
           //add dice to the current score
