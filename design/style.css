@@ -1,22 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
 * {
   font-family: "Lato", sans-serif;
 }
 
 html {
-  margin: none;
   font-family: 4;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: auto;
-  width: 100vw;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   background-color: #a68359;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 button {
@@ -24,8 +30,12 @@ button {
   border: none;
   margin: auto 0;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 button:hover {
@@ -33,44 +43,71 @@ button:hover {
   background-color: white;
   border-radius: 10px;
   width: 120px;
-  box-shadow: 1px 1px 1px #0503039a;
+  -webkit-box-shadow: 1px 1px 1px #0503039a;
+          box-shadow: 1px 1px 1px #0503039a;
   font-weight: bold;
   color: #ec4a4a;
 }
 
 #players {
   margin: 5px;
+  display: -ms-grid;
   display: grid;
   width: 100vw;
   height: 100vh;
-  column-gap: 50px;
-  background-color: white;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  box-shadow: 1px 1px 1px #0503039a;
-  align-items: flex-end;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  background-color: #f9f9f9;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 1px 1px 1px #0503039a;
+          box-shadow: 1px 1px 1px #0503039a;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #players h2 {
   text-transform: uppercase;
   margin: auto 0;
+  font-weight: bolder;
 }
 
 #player1 {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 39.2rem;
 }
 
 #player2 {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 39.2rem;
 }
 
@@ -83,9 +120,16 @@ button:hover {
 #current {
   margin-top: 60px;
   width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #current p {
@@ -110,14 +154,16 @@ button:hover {
   background-repeat: no-repeat;
   height: 88px;
   width: 88px;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   position: absolute;
   top: 18.5rem;
 }
 
 #btn-new-game {
   top: 6rem;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 #btn-new-game:hover {
@@ -131,17 +177,29 @@ button:hover {
 #roll-dice {
   justify-self: center;
   top: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #hold {
   justify-self: center;
   top: 33rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .active {
@@ -157,6 +215,7 @@ button:hover {
 }
 
 .winner {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(38%, #c91b12), to(#e9e9e9));
   background: linear-gradient(0deg, #c91b12 38%, #e9e9e9 100%);
   font-weight: bolder;
   color: white;
@@ -186,7 +245,8 @@ button:hover {
   font-size: larger;
   border: solid #ec4a4a;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #707070;
+  -webkit-box-shadow: 2px 2px 2px #707070;
+          box-shadow: 2px 2px 2px #707070;
   border-width: 1.5px;
 }
 
@@ -199,13 +259,13 @@ button:hover {
 .rules {
   position: absolute;
   top: 7rem;
-  right: 15px;
+  right: 40px;
 }
 
 .rules:hover {
   color: #ec4a4a;
-  width: 50px;
-  height: 30px;
+  height: 35px;
+  width: 70px;
 }
 
 .modal-title {
@@ -215,9 +275,15 @@ button:hover {
 }
 
 .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ec4a4a;
 }
 
@@ -226,7 +292,8 @@ button:hover {
 }
 
 .modal-title {
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .modal-footer {
@@ -251,12 +318,16 @@ button:hover {
     background-repeat: no-repeat;
     height: 140px;
     width: 140px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     position: absolute;
     top: 19.5rem;
   }
   #score {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 400%;
   }
   #current {
@@ -267,17 +338,24 @@ button:hover {
     width: 200px;
   }
   #roll-dice {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     top: 35rem;
   }
   #hold {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     top: 40rem;
-  }
-  .rules:hover {
-    width: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
